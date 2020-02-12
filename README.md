@@ -1,2 +1,2 @@
 # Dribbble-Copy
-A copy cat of Dribbble's website landing page.
+A copy of Dribbble's website landing page.
