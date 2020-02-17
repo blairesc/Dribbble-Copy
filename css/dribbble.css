@@ -9,10 +9,15 @@
 }
 
 li, a {
+    position: relative;
     list-style: none;
     text-decoration: none;
     color: #818181;
     font-weight: 200;
+}
+
+hr {
+    background-color: #F4F4F4;
 }
 
 .logo {
@@ -22,39 +27,59 @@ li, a {
     padding: 0px;
 }
 
-.material-icons {
-    position: relative;
-    top: 8px;
-    left: 5px;
+.logo:hover {
+    color: #818181;
 }
 
-a > span > .logo:hover {
-    color: #818181;
+.toggle-btn {
+    display: none;
+}
+
+.fa-bars {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.fa-bars:hover {
+    color: white;
+}
+
+.material-icons {
+    position: relative;
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    color: whitesmoke;
 }
 
 .top-nav-bar {
     overflow: hidden;
     background-color: #2f2f2f;
-    padding: 10px 10px;
+    padding: 15px 15px 10px 15px;
     width: 100%;
 }
 
-.top-nav-bar > .designer-container > li {
+.top-nav-bar > li {
     float: left;
     display: block;
     padding: 0px 10px;
 }
 
-.top-nav-bar > .sign-container > li {
-    display: inline-block;
-    padding: 0px 10px; 
+.design-container > li {
+    float: left;
+    display: block;
+    padding: 0px 10px;
 }
 
-.sign-container {
+.sign-container > li {
     float: right;
+    display: block;
+    padding: 0px 10px;
 }
 
-.top-nav-bar > li > a:hover{
+.top-nav-bar > .design-container > li > a:hover{
     color: whitesmoke;
 }
 
@@ -67,6 +92,10 @@ a > span > .logo:hover {
     background-color: #F258B5;
     border-radius: 5px;
     padding: 8px 20px;
+}
+
+.sign-up-btn:hover {
+    opacity: 100%;
 }
 
 .banner {
@@ -96,6 +125,7 @@ a > span > .logo:hover {
     align-items: center;
     padding: 18px 10px;
     height: 75px;
+    width:100%;
 }
 
 .mid-nav-bar > select {
@@ -107,23 +137,61 @@ a > span > .logo:hover {
     box-shadow: 1px 4px 6px #EAEAEA;
 }
 
+.mid-nav-bar > select ,
+.mid-nav-bar > select > option {
+    color: black;
+}
+
 .mid-nav-links > li {
     display: inline-block;
     padding: 8px 10px;
     font-size: 15px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 7px; 
 }
-
 
 .mid-nav-links > li > a:hover {
     color: #1C8EAE;
-    padding: 8px 10px;
     background-color: #DDEFF4;
+    padding: 8px 10px;
     border-radius: 7px;
 }
 
 .mid-nav-links > li > a:focus {
+    color: #1C8EAE;
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #DDEFF4;
+    border-radius: 7px;
+}
+
+.toggle-mid-nav-bar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    height: 75px;
+    width:100%;
+}
+
+.toggle-mid-nav-links > li {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 7px; 
+}
+
+.toggle-mid-nav-links > li > a:hover {
+    color: #1C8EAE;
+    background-color: #DDEFF4;
+    padding: 8px 10px;
+    border-radius: 7px;
+}
+
+.toggle-mid-nav-links > li > a:focus {
     color: #1C8EAE;
     display: inline-block;
     padding: 8px 10px;
@@ -173,6 +241,14 @@ a > span > .logo:hover {
     cursor: pointer;
 }
 
+.filter-button:hover {
+    box-shadow: 1px 4px 6px #EAEAEA;
+}
+
+.fa-th-large:hover {
+    color: #2B2A2A;
+}
+
 .bottom-content {
     background-color: #F4F4F4;
 }
@@ -197,15 +273,36 @@ a > span > .logo:hover {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 1024px) {
-    .top-nav-bar {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 960px) {
     .top-nav-bar {
-        width: 100%;
+        background-color: black;
     }
+    .design-container {
+        display: none;
+    }
+
+    .sign-container {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+
+    .mid-nav-links {
+        display: none;
+    }
+
+    .toggle-mid-nav-bar {
+        display: flex;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
 }
+
 
