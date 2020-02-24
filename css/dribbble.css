@@ -87,15 +87,28 @@ hr {
     color: whitesmoke;
 }
 
-.sign-up-btn {
+.sign-up {
+    font-size: .8rem;
+    font-weight: bold;
     color: white;
-    background-color: #F258B5;
-    border-radius: 5px;
+    background-color: #ea4c89;
+    border-radius: 5px; 
+}
+
+.sign-up:hover {
+    background-color: #ea3c89;
+}
+
+.btn-top-nav {
     padding: 8px 20px;
 }
 
-.sign-up-btn:hover {
-    opacity: 100%;
+.btn-hero {
+    padding: 10px 13px;
+}
+
+.btn-bottom {
+    padding: 10px 30px;
 }
 
 .banner {
@@ -135,11 +148,6 @@ hr {
 
 .mid-nav-bar > select:hover {
     box-shadow: 1px 4px 6px #EAEAEA;
-}
-
-.mid-nav-bar > select ,
-.mid-nav-bar > select > option {
-    color: black;
 }
 
 .mid-nav-links > li {
@@ -270,6 +278,78 @@ hr {
 .card-image {
     width: 100%;
     display: block;
+}
+
+.bottom-info {
+    padding: 15px 400px;
+}
+
+.ad-content {
+    width: 1220px;
+    height: 56;
+    display: flex;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.ad-info {
+    margin: 0px 10px;
+}
+
+.ad-info h5{
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.ad-info h6 {
+    color: grey;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.ad-info h5:hover{
+    color: #3a8bbb;
+}
+
+.ad-info h6:hover{
+    color: #3a8bbb;
+}
+
+.ad-btn {
+    color: white;
+    background-color: #3a8bbb;
+}
+
+.ad-btn:hover {
+    background-color: #3a8bbb;
+}
+
+.sign-container {
+    width: 1220px;
+    height: 93.33;
+    margin-left: 180px;
+}
+
+.btn-bottom {
+    padding: 15px 30px;
+}
+
+.sign-in {
+    padding-top: 15px;
+    color: #3a8bbb;
+}
+
+.sign-in:hover {
+    color:black;
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    color: white;
+    height: 200px;
+    width: 100%;
 }
 
 /*Media Queries*/
