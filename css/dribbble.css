@@ -21,7 +21,7 @@ hr {
 }
 
 .logo {
-    color: white;
+    color: black;
     font-family: 'Pacifico', cursive;
     font-size: larger;
     padding: 0px;
@@ -42,7 +42,7 @@ hr {
 }
 
 .fa-bars:hover {
-    color: white;
+    color: black;
 }
 
 .material-icons {
@@ -56,7 +56,7 @@ hr {
 
 .top-nav-bar {
     overflow: hidden;
-    background-color: #2f2f2f;
+    background-color: #fff;
     padding: 15px 15px 10px 15px;
     width: 100%;
 }
@@ -80,11 +80,11 @@ hr {
 }
 
 .top-nav-bar > .design-container > li > a:hover{
-    color: whitesmoke;
+    color: black;
 }
 
 .top-nav-bar > .sign-container > li > a:hover{
-    color: whitesmoke;
+    color: black;
 }
 
 .sign-up {
@@ -258,7 +258,7 @@ hr {
 }
 
 .bottom-content {
-    background-color: #F4F4F4;
+    background-color: #fff;
 }
 
 .cards {
@@ -266,18 +266,19 @@ hr {
     padding: 28px 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     gap: 30px;
 }
 
 .card {
-    padding: 10px;
-    background-color: white;
-    border-radius: 3px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .card-image {
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 /*Media Queries*/
@@ -297,7 +298,6 @@ hr {
         display: flex;
     }
 
-
     .mid-nav-links {
         display: none;
     }
@@ -309,7 +309,6 @@ hr {
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
-
     
 }
 
